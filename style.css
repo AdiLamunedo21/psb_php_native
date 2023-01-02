@@ -1,0 +1,128 @@
+section {
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+
+.fasilitas {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    /* background: transparent; */
+}
+
+.fasilitas:hover {
+    background: #35dc5c;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.fasilitas.active {
+    background: #dae32a;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.fasilitas .description {
+    text-align: right;
+    flex: 3 1;
+    padding: 10px 20px 10px 10px;
+}
+
+.fasilitas .description.icon-left {
+    order: 1;
+    text-align: left;
+}
+
+.fasilitas .icon-des {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #35dc49;
+
+}
+
+.fasilitas:hover .icon-des {
+    background: white;
+}
+
+.fasilitas.active .icon-des {
+    background: white;
+}
+
+.fasilitas .icon-des img {
+    margin-top: 15px;
+    height: 50px;
+    width: auto;
+}
+
+.tentang .deskripsi {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.tentang ul.social {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+}
+
+.tentang ul.social li {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+ul.social img {
+    height: 100%;
+    width: 100%;
+}
+
+.alumni .card {
+    transition: .3s;
+}
+
+.alumni .card:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px);
+
+}
+
+.alumni .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alumni .card .card-body img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    background-color: #272727;
+    color: #fff;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
