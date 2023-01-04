@@ -29,17 +29,17 @@
               ?>
 
                 <div class="form-group">
-                    <label for="un">Nilai Ujian Nasional</label>
-                    <input type="text" class="form-control" id="un" placeholder="Masukkan Nilai Ujian Nasional" name="un" value="<?php if(isset($data_nilai['nilai_un'])) { echo $data_nilai['nilai_un']; } ?>">
+                    <label for="un">Nilai Ujian Akhir Sekolah</label>
+                    <input type="text" class="form-control" id="un" placeholder="Masukkan Nilai Ujian Akhir Sekolah" name="un" value="<?php if(isset($data_nilai['nilai_akhir_us'])) { echo $data_nilai['nilai_akhir_us']; } ?>">
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="us">Nilai Ujian Sekolah</label>
-                    <input type="text" class="form-control" id="us" placeholder="Masukkan Nilai Ujian Sekolah" name="us" value="<?php if(isset($data_nilai['nilai_us'])) { echo $data_nilai['nilai_us']; } ?>">
+                    <input type="text" class="form-control" id="us" placeholder="Masukkan Nilai Ujian Sekolah" name="us" value="<?php //if(isset($data_nilai['nilai_us'])) { echo $data_nilai['nilai_us']; } ?>">
                 </div>
                 <div class="form-group">
                     <label for="uts_1">Nilai UTS 1</label>
-                    <input type="text" class="form-control" id="uts_1" placeholder="Masukkan Nilai Ujian Sekolah" name="uts_1" value="<?php if(isset($data_nilai['nilai_uts_1'])) { echo $data_nilai['nilai_uts_1']; } ?>">
-                </div>
+                    <input type="text" class="form-control" id="uts_1" placeholder="Masukkan Nilai Ujian Sekolah" name="uts_1" value="<?php //if(isset($data_nilai['nilai_uts_1'])) { echo $data_nilai['nilai_uts_1']; } ?>">
+                </div> -->
                 <hr>
                 <div class="text-right">
                     <button type="submit" name="btn_simpan" value="simpan_nilai" class="btn btn-primary">Simpan</button>

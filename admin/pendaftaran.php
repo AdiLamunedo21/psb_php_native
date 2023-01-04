@@ -27,10 +27,7 @@
             <th>No</th>
             <th>Nama</th>
             <th>Alamat</th>
-            <th>UTS</th>
-            <th>UAS</th>
-            <th>UN</th>
-            <th>Rata"</th>
+            <th>Nilai Akhir Ujian Sekolah</th>
             <th>Status</th>
             <th>Actions</th>
           </tr>
@@ -44,13 +41,7 @@
             <td><?= $no++ ?></td>
             <td><?= $p['nama'] ?></td>
             <td><?= $p['alamat'] ?></td>
-            <td><?= $p['nilai_uts_1'] ?></td>
-            <td><?= $p['nilai_us'] ?></td>
-            <td><?= $p['nilai_un'] ?></td>
-            <td>
-            <!-- number_format(value, 2) -->
-              <?=  number_format(($p['nilai_uts_1'] + $p['nilai_us'] + $p['nilai_un']) / 3, 2) ?>
-            </td>
+            <td><?= $p['nilai_akhir_us'] ?></td>
             <?php
 
             if($p['status'] == 0) {

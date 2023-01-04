@@ -1,8 +1,8 @@
 <?php
 
 // tabel pendaftar
-$all_pendaftar = mysqli_query($koneksi, "SELECT pendaftar.*, nilai.nilai_un, nilai.nilai_us, nilai.nilai_uts_1, nilai.status FROM pendaftar, nilai WHERE pendaftar.id = nilai.pendaftar_id");
-
+//$all_pendaftar = mysqli_query($koneksi, "SELECT pendaftar.*, nilai.nilai_akhir_us, nilai.nilai_us, nilai.nilai_uts_1, nilai.status FROM pendaftar, nilai WHERE pendaftar.id = nilai.pendaftar_id");
+$all_pendaftar = mysqli_query($koneksi, "SELECT pendaftar.*, nilai.nilai_akhir_us, nilai.status FROM pendaftar, nilai WHERE pendaftar.id = nilai.pendaftar_id");
 // cek hasil
 if(!$all_pendaftar) {
     die('Query Error : '. mysqli_error($koneksi));

@@ -25,14 +25,15 @@ if(mysqli_num_rows($result_pendaftar)){
     if(isset($_POST['btn_simpan']) && $_POST['btn_simpan'] == 'simpan_nilai') {
 
         $un = $_POST['un'];
-        $us = $_POST['us'];
-        $uts_1 = $_POST['uts_1'];
+        // $us = $_POST['us'];
+        // $uts_1 = $_POST['uts_1'];
 
         if(isset($_POST['id_nilai'])) {
             // update
             $id_nilai = $_POST['id_nilai'];
 
-            $sql_update_nilai = "UPDATE nilai set nilai_un='$un', nilai_us='$us', nilai_uts_1='$uts_1' where id='$id_nilai'";
+            // $sql_update_nilai = "UPDATE nilai set nilai_akhir_us='$un' , nilai_us='$us', nilai_uts_1='$uts_1' where id='$id_nilai' ";
+            $sql_update_nilai = "UPDATE nilai set nilai_akhir_us='$un' where id='$id_nilai' ";
             $query_update_nilai = mysqli_query($koneksi, $sql_update_nilai);
 
             if($query_update_nilai){
@@ -49,8 +50,8 @@ if(mysqli_num_rows($result_pendaftar)){
 
         } else {
             // insert
-            $sql_insert_nilai = "INSERT INTO nilai (nilai_un, nilai_us, nilai_uts_1, status, pendaftar_id) values ('$un', '$us', '$uts_1', 0, '$id_pendaftar')";
-    
+            // $sql_insert_nilai = "INSERT INTO nilai (nilai_un, nilai_us, nilai_uts_1, status, pendaftar_id) values ('$un', '$us', '$uts_1', 0, '$id_pendaftar')";
+            $sql_insert_nilai = "INSERT INTO nilai (nilai_akhir_us status, pendaftar_id) VALUES ('$un', 0, '$id_pendaftar')";
             $query_insert_nilai = mysqli_query($koneksi, $sql_insert_nilai);
 
             if($query_insert_nilai){

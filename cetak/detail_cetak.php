@@ -119,24 +119,9 @@ $html .= '
 
 <table>
     <tr>
-        <td width="100px">Nilai Uts 1</td>
+        <td width="100px">Nilai Akhir Sekolah</td>
         <td>:</td>
-        <td>'. $data_nilai['nilai_uts_1'] .'</td>
-    </tr>
-    <tr>
-        <td>Nilai US</td>
-        <td>:</td>
-        <td>'. $data_nilai['nilai_us'] .'</td>
-    </tr>
-    <tr>
-        <td>Nilai UN</td>
-        <td>:</td>
-        <td>'. $data_nilai['nilai_un'] .'</td>
-    </tr>
-    <tr>
-        <td>RATA"</td>
-        <td>:</td>
-        <td>'. number_format(($data_nilai['nilai_uts_1'] + $data_nilai['nilai_us'] + $data_nilai['nilai_un']) / 3, 2) .'</td>
+        <td>'. $data_nilai['nilai_akhir_us'] .'</td>
     </tr>
     <tr>
         <td>HASIL</td>
